@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1= title
+	h3 Welcome to My Sample Form
+	p Please enter your data into the form below.
+	.container
+		.row
+			form(action="/search" method="post" id="search-form" class="form-inline")
+				input(type="text" placeholder="Name" name="userName" class="col-sm-3 col-sm-offset-4 form-box")
+				input(type="text" placeholder="Favorite Food" name="favoriteFood" class="col-sm-3 col-sm-offset-4 form-box")
+				input(type="text" placeholder="Favorite Movie" name="favoriteMovie" class="col-sm-3 col-sm-offset-4 form-box")
+				input(type="submit" class="col-sm-3 col-sm-offset-4 btn btn-primary form-box")
+
